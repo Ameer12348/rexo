@@ -1,0 +1,71 @@
+.about-heading-1{
+    font-size: 38px;
+    color: black;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.about-para{
+    font-size: 16px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.about-bg{
+   
+    z-index: -1;
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url(../4.images/camera.jpg) fixed no-repeat center center /cover;
+}
+
+.img-box {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white;
+    
+img{
+    width: 150px;
+    object-fit: contain;
+}
+}
+
+
+
+
+
+
+@media (width<=900px) {
+
+        .about-heading-1{
+            font-size: 26px;
+        }
+        .about-para{
+            font-size: 14px;
+        }
+}
+@media (width<768px) {
+    .about-box{
+        p{
+            width: 70%;
+
+        }
+    }
+    
+}
+
+
+
+
+.about-hero{
+    height: 400px;
+}
+@media (width<992px) {
+    .about-hero{
+        height: 700px;
+    }
+    
+}

@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Rubik:wght@500&display=swap');
+// Required Core Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+// Optional Theme Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
+
+
+
+
+
+////////////////////////// for background //////////////////////////////////
+.background-top-nav{
+position: absolute;
+top: 0px;
+right: 0px;
+background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../4.images/laptop.jpg) fixed no-repeat center center /cover;
+width: 100%;
+height: calc(100vh );
+z-index: -1;
+}
+.main-nav-sticky{
+    z-index: 1000;
+    top: 0px;
+}
+
+
+
+
+.main-nav{
+    height:60px;
+    transition: all 0.5s;
+    color:white;
+
+}
+.nav-links{
+    height: 100%;
+}
+.cross{
+    display: none;
+}
+
+.bars{
+    display: none;
+}
+
+
+@media (width<=768px) {
+    .nav-links{
+        transition: all 1s;
+        position: fixed;
+        opacity: 1;
+        top: 0px;
+        left: 0px;
+        height: 0px;
+        width: 100%;
+        background-color: white;
+        z-index: 10000 !important;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        color: black;
+        transition: all 0.5s;
+        overflow: hidden;
+        color: inherit;
+        li{
+            width: 50%;
+            text-align: center;
+            padding: 10px;
+            a{
+                font-weight: 400;
+                font-size: 25px;
+                color: black !important;
+            }
+        }
+    }
+    .cross{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        display: inline;
+        color: black;
+        font-size: 30px;
+    }
+    .bars{
+        display: block;
+    }
+    .list-logo{
+        width: 100% !important;
+        height: 30px;
+        margin-bottom: 100px;
+        object-fit: contain;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero{
+    height: calc(100vh - 100px);
+    .glide__slide{
+        h1{
+            margin: auto;
+            text-align: center;
+            color: white;
+            font-weight: 200;
+            font-size: 45px;
+        }
+    }
+}
+
+@media (width<=768px) {
+    .hero{
+        .glide__slide{
+            h1{
+                font-size: 22px;
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.marquee{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    display: hidden;
+    color: white;
+    p{
+        margin: 0px 10px;
+        font-family: 'Dancing Script', 'cursive';
+        font-size: 25px;
+    }
+}
